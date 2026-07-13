@@ -1,8 +1,16 @@
-@font-face{
-    font-family: "Sedan SC";
-    src: url(./styles/SedanSC-Regular.ttf);
+@font-face {
+  font-family: "Sedan SC";
+  src: url(./styles/SedanSC-Regular.ttf);
 }
 
-body{
-    font-family: "Sedan SC", sans-serif;
+body {
+  font-family: "Sedan SC", sans-serif;
+}
+
+span {
+  color: red;
+}
+
+span:hover{
+    color: brown;
 }
