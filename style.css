@@ -1,7 +1,7 @@
-/* @font-face {
-  font-family: "Sedan SC";
-  src: url(./styles/SedanSC-Regular.ttf);
-} */
+@font-face {
+  font-family: ShortBaby;
+  src: url(./styles/ShortBaby-Mg2w.ttf);
+}
 
 /* span {
     color: red;
