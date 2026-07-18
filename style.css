@@ -15,18 +15,32 @@ body {
   font-family: "Sedan SC", sans-serif;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    gap: 20px;
-    padding: 20px;
-    
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 20px;
+  padding: 20px;
 }
 
-.left{
-    background-color: blue;
+.nav_card{
+    width: 15vw;
+    height: 90vh;
+    background-color: black;
+    border-radius: 30px;
 }
 
-.right{
-    background-color: green;
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.user_photo img{
+    border-radius: 60px;
+}
+
+.user_name{
+    color: white;
 }
