@@ -111,3 +111,16 @@ header > h1 {
     font-weight: 100;
     opacity: 70%;
 }
+
+#board{
+    background-color: white;
+    width: 60rem;
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 8rem;
+}
+
+.graph > img{
+    width: 60rem;
+    height: 20rem;
+}
