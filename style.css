@@ -112,6 +112,11 @@ header > h1 {
     opacity: 70%;
 }
 
+.right{
+    margin-left: 3rem;
+    
+}
+
 #board{
     background-color: white;
     width: 80%;
