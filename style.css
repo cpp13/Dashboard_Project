@@ -103,30 +103,97 @@ header > h1 {
 }
 
 #searchbar:focus {
-    border: 3px solid lightseagreen;
-    outline: none;
+  border: 3px solid lightseagreen;
+  outline: none;
 }
 
-#searchbar::placeholder{
-    font-weight: 100;
-    opacity: 70%;
+#searchbar::placeholder {
+  font-weight: 100;
+  opacity: 70%;
 }
 
-.right{
-    margin-left: 3rem;
-    
+.right {
+  margin-left: 3rem;
 }
 
-#board{
-    background-color: white;
-    width: 80%;
-    padding: 10px;
-    border-radius: 30px;
-    margin-left: 3rem;
+#board {
+  background-color: white;
+  width: 80%;
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 3rem;
 }
 
-.graph > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.graph > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#card_con {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: ShortBaby;
+  /* margin-left: 3rem; */
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2:hover {
+  font-size: 30px;
+  text-decoration: underline rgb(243, 222, 37);
+}
+
+.card {
+  width: 180px;
+  height: 100px;
+  border-radius: 20px;
+  /* padding: 2px 2px; */
+  border: 20px;
+}
+
+.card > i {
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.cardHead {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.cardData {
+  margin-top: 4px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.card:hover {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.revenue {
+  background-color: rgba(144, 238, 144, 0.473);
+}
+
+.transaction {
+  background-color: lightyellow;
+}
+
+.likes {
+  background-color: rgba(255, 182, 193, 0.596);
+}
+
+.user {
+  background-color: rgba(135, 206, 250, 0.377);
 }
