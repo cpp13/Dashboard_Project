@@ -142,6 +142,7 @@ header > h1 {
 h2 {
   text-align: center;
   text-decoration: underline;
+  margin-top: 70px;
 }
 
 h2:hover {
@@ -197,3 +198,25 @@ h2:hover {
 .user {
   background-color: rgba(135, 206, 250, 0.377);
 }
+
+table{
+    width: 90%;
+    
+}
+
+table td,th{
+    text-align: center;
+    height: 50px;
+    border-collapse:collapse;
+
+}
+
+table th{
+    background-color: rgb(209, 181, 58);
+}
+
+table td{
+    background-color: white;
+
+}
+
