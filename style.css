@@ -229,7 +229,7 @@ table tbody tr:hover {
 
 #schedule {
   background-color: white;
-  height: 34rem;
+  height: 24rem;
   width: 90%;
   margin-left: 50px;
   margin-top: 60px;
@@ -237,4 +237,43 @@ table tbody tr:hover {
   padding: 15px;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+#schedule button{
+    height: 20px;
+    width: 80px;
+    border: none;
+    background-color: white;
+    font-family: "Sedan SC", sans-serif;
+    color: rgb(97, 88, 88);
+}
+
+.schedule_head {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+  align-items: baseline;
+}
+
+.event {
+  line-height: 7px;
+  margin-bottom: 30px;
+  padding-left: 7px;
+}
+
+.event:nth-of-type(odd){
+    border-left: 3px solid lightgreen;
+}
+
+.event:nth-of-type(even){
+    border-left: 3px solid lightskyblue;
+}
+
+.event_head {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.event_info{
+    opacity: 50%;
 }
