@@ -239,13 +239,13 @@ table tbody tr:hover {
   overflow-x: hidden;
 }
 
-#schedule button{
-    height: 20px;
-    width: 80px;
-    border: none;
-    background-color: white;
-    font-family: "Sedan SC", sans-serif;
-    color: rgb(97, 88, 88);
+#schedule button {
+  height: 20px;
+  width: 80px;
+  border: none;
+  background-color: white;
+  font-family: "Sedan SC", sans-serif;
+  color: rgb(97, 88, 88);
 }
 
 .schedule_head {
@@ -258,15 +258,16 @@ table tbody tr:hover {
 .event {
   line-height: 7px;
   margin-bottom: 30px;
-  padding-left: 7px;
+  padding: 0px 7px;
 }
 
-.event:nth-of-type(odd){
-    border-left: 3px solid lightgreen;
+.event:nth-of-type(odd) {
+  border-left: 3px solid lightgreen;
+  /* border: 3px solid lightgreen; */
 }
 
-.event:nth-of-type(even){
-    border-left: 3px solid lightskyblue;
+.event:nth-of-type(even) {
+  border-left: 3px solid lightskyblue;
 }
 
 .event_head {
@@ -274,6 +275,53 @@ table tbody tr:hover {
   font-weight: bold;
 }
 
-.event_info{
-    opacity: 50%;
+.event_info {
+  opacity: 50%;
+}
+
+.loc_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+iframe{
+    border-radius: 20px;
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form h2 {
+  margin-top: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px 6px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form textarea{
+    height: 180px;
+}
+
+.form input[type="submit"]{
+    width: 100%;
+    border: 1px;
+    border-radius: 8px;
+    padding: 8px 2px;
+    background-color: rgb(160, 221, 69);
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: bold;
 }
