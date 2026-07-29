@@ -5,7 +5,7 @@
 
 body {
   font-family: "Sedan SC", sans-serif;
-  background-color: #dddddd;
+  background-color: #f3f3f3;
 }
 
 main {
@@ -133,7 +133,8 @@ header > h1 {
 #card_con {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  padding: 20px;
+  /* gap: 20px; */
   flex-wrap: wrap;
   font-family: ShortBaby;
   /* margin-left: 3rem; */
@@ -324,4 +325,29 @@ iframe{
     color: whitesmoke;
     font-size: 14px;
     font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.brand_logo a{
+    font-size: 34px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.brand_logo a:hover{
+    color: rgb(209, 209, 209);
+}
+
+footer p{
+    margin: 10px;
 }
