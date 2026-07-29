@@ -147,8 +147,9 @@ h2 {
 }
 
 h2:hover {
-  font-size: 30px;
-  text-decoration: underline rgb(243, 222, 37);
+    font-size: 30px;
+    text-decoration: underline rgb(243, 222, 37);
+    transition: 1.5s;
 }
 
 .card {
@@ -183,6 +184,7 @@ h2:hover {
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
+  transition: 1s;
 }
 
 .revenue {
@@ -313,6 +315,7 @@ iframe{
 }
 
 .form textarea{
+    resize: vertical;
     height: 180px;
 }
 
