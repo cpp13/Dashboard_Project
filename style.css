@@ -17,7 +17,7 @@ main {
 
 .nav_card {
   width: 15vw;
-  height: 90vh;
+  height: 92.5vh;
   background-color: black;
   border-radius: 30px;
   position: fixed;
@@ -336,6 +336,8 @@ footer{
     text-align: center;
     padding: 15px;
     font-size: 18px;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
 .brand_logo a{
