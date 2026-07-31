@@ -133,7 +133,7 @@ header > h1 {
 #card_con {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 50px;
   /* gap: 20px; */
   flex-wrap: wrap;
   font-family: ShortBaby;
@@ -147,9 +147,9 @@ h2 {
 }
 
 h2:hover {
-    font-size: 30px;
-    text-decoration: underline rgb(243, 222, 37);
-    transition: 1.5s;
+  font-size: 30px;
+  text-decoration: underline rgb(243, 222, 37);
+  transition: 1.5s;
 }
 
 .card {
@@ -288,18 +288,24 @@ table tbody tr:hover {
   gap: 20px;
 }
 
-iframe{
-    border-radius: 20px;
+iframe {
+  border-radius: 20px;
 }
 
 .form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .form h2 {
   margin-top: 10px;
+}
+
+.form h2:hover {
+  font-size: 1.5em;
+  text-decoration: underline rgb(243, 222, 37);
+  /* transition: 1.5s; */
 }
 
 .form input[type="text"],
@@ -314,45 +320,45 @@ iframe{
   box-sizing: border-box;
 }
 
-.form textarea{
-    resize: vertical;
-    height: 180px;
+.form textarea {
+  resize: vertical;
+  height: 180px;
 }
 
-.form input[type="submit"]{
-    width: 100%;
-    border: 1px;
-    border-radius: 8px;
-    padding: 8px 2px;
-    background-color: rgb(160, 221, 69);
-    color: whitesmoke;
-    font-size: 14px;
-    font-weight: bold;
+.form input[type="submit"] {
+  width: 100%;
+  border: 1px;
+  border-radius: 8px;
+  padding: 8px 2px;
+  background-color: rgb(160, 221, 69);
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 20px;
-    margin-top: 20px;
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
-.brand_logo a{
-    font-size: 34px;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: white;
+.brand_logo a {
+  font-size: 34px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
 }
 
-.brand_logo a:hover{
-    color: rgb(209, 209, 209);
+.brand_logo a:hover {
+  color: rgb(209, 209, 209);
 }
 
-footer p{
-    margin: 10px;
+footer p {
+  margin: 10px;
 }
