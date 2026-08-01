@@ -101,6 +101,7 @@ header > h1 {
   border: 0px solid white;
   background-color: white;
   margin-right: 50px;
+  padding: 8px;
 }
 
 #searchbar:focus {
