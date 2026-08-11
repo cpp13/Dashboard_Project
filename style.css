@@ -15,6 +15,8 @@ main {
   padding: 20px;
 }
 
+
+
 .nav_card {
   width: 15vw;
   height: 92.5vh;
@@ -33,9 +35,9 @@ main {
 }
 
 .user_photo img {
-  border-radius: 80px;
-  /* height: 8rem;
-  width: 8rem; */
+  border-radius: 50%;
+  /* height: 50%;
+  width: 50%; */
 }
 
 .user_name {
@@ -362,3 +364,5 @@ footer {
 footer p {
   margin: 10px;
 }
+
+@media screen and (max-width: )
