@@ -11,54 +11,65 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  gap: 20px;
-  padding: 20px;
+  gap: 1.25rem;
+  padding: 1.25rem;
 }
 
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  height: 92.5vh;
+  position: sticky;
+  top: 20px;
+  background-color: black;
+  border-radius: 30px;
+}
 
-
-.nav_card {
+/* .nav_card {
   width: 15vw;
   height: 92.5vh;
   background-color: black;
   border-radius: 30px;
   position: fixed;
   color: white;
-}
+} */
+
+
 
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding-top: 40px;
+  /* gap: 0.625rem; */
+  padding-top: 2.5rem;
 }
 
-.user_photo img {
+.profile_img img {
   border-radius: 50%;
-  /* height: 50%;
-  width: 50%; */
+  height: 80%;
+  width: 100%;
 }
 
-.user_name {
+.profile_name {
   color: white;
+  font-size: 1.14rem;
 }
 
-.navbar {
+/* .navbar {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
-  gap: 2rem;
-  margin-top: 4rem;
-}
+  } */
 
 .nav {
   display: flex;
   flex-direction: row;
   color: white;
-  margin-left: 30px;
-  padding-right: 20px;
-  gap: 20px;
+  align-items: baseline;
+  margin-top: 2rem;
+  margin-left: 1.875rem;
+  gap: 2rem;
+  padding-right: 1.25rem;
 }
 
 .nav:hover {
@@ -69,19 +80,38 @@ main {
   color: white;
   text-decoration: none;
   font-weight: 400;
-  font-size: 16px;
-  padding-right: 20px;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  padding-right: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .nav a:hover {
   color: #dddddd;
 }
 
+.menu_bar{
+  margin-left: 5rem;
+}
+
+ .menu {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
 .right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   margin-left: 3rem;
   /* padding-left: 1.5rem; */
 }
@@ -100,13 +130,13 @@ header > h1 {
 }
 
 #searchbar {
-  height: 25px;
-  width: 200px;
-  border-radius: 12px;
+  height: 1.563rem;
+  width: 12.5rem;
+  border-radius: 0.75rem;
   border: 0px solid white;
   background-color: white;
-  margin-right: 50px;
-  padding: 8px;
+  margin-right: 3.125rem;
+  padding: 0.5rem;
 }
 
 #searchbar:focus {
@@ -119,10 +149,14 @@ header > h1 {
   opacity: 70%;
 }
 
+/* .right{
+  width: 90%;
+} */
+
 #board {
   background-color: white;
-  width: 90%;
-  padding: 10px;
+  width: 85%;
+  padding: 0.625rem;
   border-radius: 30px;
   margin-left: 3rem;
 }
@@ -136,11 +170,11 @@ header > h1 {
 h2 {
   text-align: center;
   text-decoration: underline;
-  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 
 h2:hover {
-  font-size: 30px;
+  font-size: 1.875rem;
   text-decoration: underline rgb(243, 222, 37);
   transition: 1.5s;
 }
@@ -148,36 +182,36 @@ h2:hover {
 #card_con {
   display: flex;
   justify-content: space-around;
-  padding: 0 50px;
+  padding: 0 3.125rem;
   flex-wrap: wrap;
   font-family: ShortBaby;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .card {
-  width: 180px;
-  height: 100px;
+  width: 11.25rem;
+  height: 6.25rem;
   border-radius: 20px;
   /* padding: 2px 2px; */
   border: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .card > i {
-  margin-left: 150px;
-  margin-top: 20px;
+  margin-left: 9.375rem;
+  margin-top: 1.25rem;
 }
 
 .cardHead {
   margin: 0;
-  margin-left: 10px;
-  font-size: 18px;
+  margin-left: 0.625rem;
+  font-size: 1.125rem;
 }
 
 .cardData {
-  margin-top: 4px;
-  font-size: 16px;
-  margin-left: 10px;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  margin-left: 0.625rem;
 }
 
 .card:hover {
@@ -207,15 +241,15 @@ h2:hover {
 
 table {
   width: 90%;
-  margin-left: 50px;
+  margin-left: 3.125rem;
   background-color: white;
   border-collapse: collapse;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 table th,
 table td {
-  padding: 15px 100px;
+  padding: 0.9375rem 6.25rem;
   text-align: left;
 }
 
@@ -236,17 +270,17 @@ table tbody tr:hover {
   background-color: white;
   height: 24rem;
   width: 90%;
-  margin-left: 50px;
-  margin-top: 60px;
+  margin-left: 3.125rem;
+  margin-top: 3.75rem;
   border-radius: 20px;
-  padding: 15px;
+  padding: 0.9375rem;
   overflow: scroll;
   overflow-x: hidden;
 }
 
 #schedule button {
-  height: 20px;
-  width: 80px;
+  height: 1.25rem;
+  width: 5rem;
   border: none;
   background-color: white;
   font-family: "Sedan SC", sans-serif;
@@ -256,14 +290,14 @@ table tbody tr:hover {
 .schedule_head {
   display: flex;
   justify-content: space-between;
-  padding-left: 7px;
+  padding-left: 0.4375rem;
   align-items: baseline;
 }
 
 .event {
-  line-height: 7px;
-  margin-bottom: 30px;
-  padding: 0px 7px;
+  line-height: 0.4375rem;
+  margin-bottom: 1.875rem;
+  padding: 0px 0.4375rem;
 }
 
 .event:nth-of-type(odd) {
@@ -276,7 +310,7 @@ table tbody tr:hover {
 }
 
 .event_head {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
@@ -287,7 +321,7 @@ table tbody tr:hover {
 .loc_form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 iframe {
@@ -296,12 +330,12 @@ iframe {
 
 .form {
   background-color: white;
-  padding: 20px;
+  padding: 1.25rem;
   border-radius: 20px;
 }
 
 .form h2 {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .form h2:hover {
@@ -315,8 +349,8 @@ iframe {
 .form textarea {
   background-color: white;
   width: 100%;
-  margin-bottom: 20px;
-  padding: 8px 6px;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 0.375rem;
   border: 1px solid rgb(212, 212, 212);
   border-radius: 5px;
   box-sizing: border-box;
@@ -324,17 +358,17 @@ iframe {
 
 .form textarea {
   resize: vertical;
-  height: 180px;
+  height: 11.25rem;
 }
 
 .form input[type="submit"] {
   width: 100%;
   border: 1px;
   border-radius: 8px;
-  padding: 8px 2px;
+  padding: 0.5rem 0.125rem;
   background-color: rgb(160, 221, 69);
   color: whitesmoke;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
 }
 
@@ -342,17 +376,17 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 15px;
-  font-size: 18px;
+  padding: 0.9375rem;
+  font-size: 1.125rem;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .brand_logo a {
-  font-size: 34px;
-  margin-left: 20px;
-  margin-bottom: 5px;
-  margin-top: 10px;
+  font-size: 2.125rem;
+  margin-left: 1.25rem;
+  margin-bottom: 0.3125rem;
+  margin-top: 0.625rem;
   text-decoration: none;
   color: white;
 }
@@ -362,7 +396,90 @@ footer {
 }
 
 footer p {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
-@media screen and (max-width: )
+@media screen and (max-width: 780px) {
+  main {
+    display: block;
+  }
+
+  .left {
+    position: static;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .profile_img {
+    width: 15%;
+    position: absolute;
+    top: 0.1rem;
+  }
+
+  .profile_name {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    justify-content: space-around;
+  }
+
+  .nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .left {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0;
+    /* padding: 0.5rem; */
+    align-items: center;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+    padding: 12px;
+    /* position: relative; */
+    align-items: center;
+  }
+
+  .profile_img {
+    position: static;
+    display: flex;
+    /* align-items: baseline; */
+  }
+
+  .profile_img img {
+    width: 5rem; 
+    height: 5rem;
+    border-radius: 50%; 
+  }
+
+  .profile_name { 
+    font-size: 1.9rem;
+    margin: 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+ 
+}
