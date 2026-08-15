@@ -35,8 +35,6 @@ main {
   color: white;
 } */
 
-
-
 .profile {
   display: flex;
   flex-direction: column;
@@ -89,11 +87,11 @@ main {
   color: #dddddd;
 }
 
-.menu_bar{
+.menu_bar {
   margin-left: 5rem;
 }
 
- .menu {
+.menu {
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -106,6 +104,10 @@ main {
   width: 100%;
   height: 3px;
   background-color: white;
+}
+
+.flyout{
+  display: none;
 }
 
 .right {
@@ -436,6 +438,11 @@ footer p {
   .nav i {
     display: none;
   }
+
+  .loc_form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -463,12 +470,12 @@ footer p {
   }
 
   .profile_img img {
-    width: 5rem; 
+    width: 5rem;
     height: 5rem;
-    border-radius: 50%; 
+    border-radius: 50%;
   }
 
-  .profile_name { 
+  .profile_name {
     font-size: 1.9rem;
     margin: 0;
   }
@@ -477,9 +484,46 @@ footer p {
     display: none;
   }
 
-  .menu{
+  .menu {
     display: flex;
+    position: relative;
   }
 
- 
+  .flyout{
+    display: flex;
+    background-color: rgb(131, 105, 67);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+    position: absolute;
+    margin-left: 25rem;
+    margin-top: -45px;
+    line-height: 35px
+  }
+  
+  .flyout li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flyout ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flyout li a{
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  .
+
+  /* .flyout.menu:hover{
+    display: flex;
+  } */
+
+
+  
 }
