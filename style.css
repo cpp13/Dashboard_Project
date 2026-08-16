@@ -312,6 +312,7 @@ table tbody tr:hover {
 
 iframe {
   border-radius: 20px;
+  width: 100%;
 }
 
 .form {
@@ -423,6 +424,23 @@ footer p {
     display: none;
   }
 
+  .right{
+    padding: 10px;
+  }
+
+  header{
+    padding: 0;
+  }
+
+  header > h1{
+    font-size: 4.375vw;
+  }
+
+  #searchbar{
+    width: 10.5rem;
+    margin-right: 0;
+  }
+
   .loc_form {
     display: flex;
     flex-direction: column;
@@ -514,4 +532,9 @@ footer p {
     opacity: 1;
     visibility: visible;
   }
+
+#searchbar{
+  width: 8.5rem;
+
+}
 }
