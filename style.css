@@ -517,7 +517,8 @@ footer p {
     line-height: 35px;
     opacity: 0;
     visibility: hidden;
-    /* z-index: 99999; */
+    z-index: 99999;
+    transition: 0.4s;
   }
 
   .flyout li {
