@@ -39,7 +39,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 0.625rem; */
   padding-top: 2.5rem;
 }
 
@@ -53,11 +52,6 @@ main {
   color: white;
   font-size: 1.14rem;
 }
-
-/* .navbar {
-  display: flex;
-  flex-direction: column;
-  } */
 
 .nav {
   display: flex;
@@ -106,7 +100,7 @@ main {
   background-color: white;
 }
 
-.flyout{
+.flyout {
   display: none;
 }
 
@@ -114,20 +108,18 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  margin-left: 3rem;
-  /* padding-left: 1.5rem; */
+  padding: 0 40px;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: baseline;
 }
 
 header > h1 {
-  margin-top: 10px;
-  margin-left: 50px;
-  font-size: 38px;
+  margin-top: 0.625rem;
+  font-size: 2.375rem;
   font-weight: 700;
 }
 
@@ -151,16 +143,11 @@ header > h1 {
   opacity: 70%;
 }
 
-/* .right{
-  width: 90%;
-} */
-
 #board {
   background-color: white;
-  width: 85%;
+  width: 95%;
   padding: 0.625rem;
   border-radius: 30px;
-  margin-left: 3rem;
 }
 
 .graph > img {
@@ -194,7 +181,6 @@ h2:hover {
   width: 11.25rem;
   height: 6.25rem;
   border-radius: 20px;
-  /* padding: 2px 2px; */
   border: 20px;
   margin-bottom: 2.5rem;
 }
@@ -242,8 +228,7 @@ h2:hover {
 }
 
 table {
-  width: 90%;
-  margin-left: 3.125rem;
+  width: 95%;
   background-color: white;
   border-collapse: collapse;
   margin-top: 2.5rem;
@@ -271,8 +256,7 @@ table tbody tr:hover {
 #schedule {
   background-color: white;
   height: 24rem;
-  width: 90%;
-  margin-left: 3.125rem;
+  width: 95%;
   margin-top: 3.75rem;
   border-radius: 20px;
   padding: 0.9375rem;
@@ -480,6 +464,11 @@ footer p {
     margin: 0;
   }
 
+  .menu_bar {
+    position: relative;
+    display: inline-block;
+  }
+
   .nav {
     display: none;
   }
@@ -487,43 +476,42 @@ footer p {
   .menu {
     display: flex;
     position: relative;
+    z-index: 2;
   }
 
-  .flyout{
-    display: flex;
+  .flyout {
+    display: block;
     background-color: rgb(131, 105, 67);
     color: white;
-    padding: 5px 8px;
+    padding: 5px 9px;
     border-radius: 8px;
     position: absolute;
-    margin-left: 25rem;
-    margin-top: -45px;
-    line-height: 35px
+    top: 100%;
+    left: 0;
+    line-height: 35px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99999;
   }
-  
+
   .flyout li {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  .flyout ul{
+  .flyout ul {
     margin: 0;
     padding: 0;
   }
-  
-  .flyout li a{
+
+  .flyout li a {
     text-decoration: none;
     color: white;
-    
   }
 
-  .
-
-  /* .flyout.menu:hover{
-    display: flex;
-  } */
-
-
-  
+  .menu_bar:hover .flyout {
+    opacity: 1;
+    visibility: visible;
+  }
 }
