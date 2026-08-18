@@ -91,7 +91,7 @@ main {
 }
 
 .menu_bar {
-  margin-left: 5rem;
+  margin-left: 4.8rem;
 }
 
 .menu {
@@ -528,6 +528,7 @@ table td {
     visibility: hidden;
     z-index: 99999;
     transition: 0.4s;
+    margin-left: -15vw;
   }
 
   .flyout li {
