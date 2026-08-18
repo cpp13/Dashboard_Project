@@ -561,4 +561,8 @@ table td {
     padding: 0.9375rem 3rem;
     text-align: left;
   }
+
+  .event{
+    line-height: 0.9rem;
+  }
 }
